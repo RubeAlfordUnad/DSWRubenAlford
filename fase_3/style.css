@@ -1,0 +1,51 @@
+:root{
+    --primario: #E9D5DA;
+    --secundario: #827397;
+    --tercero: #4D4C7D;
+    --gris: #363062;
+}
+
+html{
+    box-sizing: border-box;
+    box-sizing: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+header{
+        text-align: center;
+        background: var(--primario);
+        font-size: 1rem
+    }
+
+nav{
+    background: var(--secundario);
+    gap: 2rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+    background: var(--tercero);
+}
+
+section{
+    grid-column: 1/4;
+    background: var(--gris);
+}
+
+aside{
+    grid-column: 4/3;
+    background: var(--gris);
+}
+
+footer{
+    background: var(--gris);
+    text-align: center;
+}
